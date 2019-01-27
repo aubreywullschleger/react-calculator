@@ -1,13 +1,11 @@
 import React from 'react';
 
-class CalculatorDisplay extends React.Component {
-  render () {
+function CalculatorDisplay (props) {
     return (
       <div>
-        <input type="text" />
+        <input type="text" value={props.buttonPressed} readOnly />
       </div>
     )
-  }
 }
 
 export default CalculatorDisplay;
